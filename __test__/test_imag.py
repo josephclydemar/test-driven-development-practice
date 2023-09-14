@@ -1,14 +1,8 @@
 import sys
 import os
-
 parent_dir = os.path.dirname(os.path.realpath('src'))
-
-# Add the parent directory to sys.path
-sys.path.append(os.path.join(parent_dir, 'src'))
-
+sys.path.append(os.path.join(parent_dir, 'src')) # Add the parent directory to sys.path
 from imag import Imag
-
-
 import unittest
 
 class TestImag(unittest.TestCase):

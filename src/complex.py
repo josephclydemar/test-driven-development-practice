@@ -31,7 +31,7 @@ class Complex:
                        (self.__imag - other.get_imag()).get_value()
                       )
     
-    def __mul__(self, other): # (r1 + i1) * (r2 + i2) = r1*r2 + r1*i2 + i1*r2 + i1*i2 = (r1*r2 - i1*i2) + (r1*i2 + i1*r2)
+    def __mul__(self, other): #  (r1 + i1) * (r2 + i2) = r1*r2 + r1*i2 + i1*r2 + i1*i2 = (r1*r2 - i1*i2) + (r1*i2 + i1*r2)
         return Complex(
                        ( (self.__real * other.get_real()) - (self.__imag * other.get_imag()) ).get_value(),
                        ( (self.__real * other.get_imag()) + (self.__imag * other.get_real()) ).get_value()
