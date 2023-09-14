@@ -27,3 +27,5 @@ class Imag:
     
     def __mul__(self, other):
         return Imag(self.__value * other.get_value())
+    
+    # Hello hehe
