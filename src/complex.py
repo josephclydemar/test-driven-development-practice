@@ -36,3 +36,5 @@ class Complex:
                        ( (self.__real * other.get_real()) - (self.__imag * other.get_imag()) ).get_value(),
                        ( (self.__real * other.get_imag()) + (self.__imag * other.get_real()) ).get_value()
                       )
+    
+    # Lomi
