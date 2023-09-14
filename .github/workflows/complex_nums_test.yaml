@@ -1,9 +1,6 @@
 name: Complex Numbers Operations Test
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main

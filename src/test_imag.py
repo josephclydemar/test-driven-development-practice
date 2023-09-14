@@ -65,6 +65,17 @@ class TestImag(unittest.TestCase):
         self.assertEqual((Imag(0) * Imag(1)).get_value(), 0)
 
 
+    # * Equality tests
+    def test_imag_eq_return_value(self):
+        self.assertEqual(Imag(2) == Imag(-2), False)
+        self.assertEqual(Imag(1) == Imag(1), True)
+        self.assertEqual(Imag(0) == Imag(-1), False)
+        self.assertEqual(Imag(-2) == Imag(-2), True)
+        self.assertEqual(Imag(-1) == Imag(1), False)
+        self.assertEqual(Imag(-1) == Imag(0), False)
+        self.assertEqual(Imag(0) == Imag(0), True)
+
+
 
 if __name__ == '__main__':
     unittest.main()
