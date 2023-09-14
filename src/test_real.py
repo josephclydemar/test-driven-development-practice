@@ -65,6 +65,18 @@ class TestReal(unittest.TestCase):
         self.assertEqual((Real(1) * Real(1)).get_value(), 1)
         self.assertEqual((Real(0) * Real(1)).get_value(), 0)
 
+    
+    
+    # * Equality tests
+    def test_real_eq_return_value(self):
+        self.assertEqual(Real(2) == Real(-2), False)
+        self.assertEqual(Real(1) == Real(1), True)
+        self.assertEqual(Real(0) == Real(-1), False)
+        self.assertEqual(Real(-2) == Real(-2), True)
+        self.assertEqual(Real(-1) == Real(1), False)
+        self.assertEqual(Real(-1) == Real(0), False)
+        self.assertEqual(Real(0) == Real(0), True)
+
 
 if __name__ == '__main__':
     unittest.main()
