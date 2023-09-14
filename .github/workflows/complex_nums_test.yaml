@@ -29,4 +29,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       
       - name: Test Code
-        run: python ./test_complex.py
+        run: | 
+          python ./test_real.py
+          python ./test_imag.py
+          python ./test_complex.py
