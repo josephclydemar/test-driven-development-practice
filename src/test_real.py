@@ -1,7 +1,3 @@
-import sys
-import os
-parent_dir = os.path.dirname(os.path.realpath('src'))
-sys.path.append(os.path.join(parent_dir, 'src')) # * Add the parent directory to sys.path
 import unittest
 from real import Real
 
