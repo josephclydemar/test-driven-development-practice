@@ -29,4 +29,4 @@ class Imag:
         return Imag(self.__value * other.get_value())
     
     def __eq__(self, other):
-        return self.value == other.get_value()
+        return self.__value == other.get_value()
