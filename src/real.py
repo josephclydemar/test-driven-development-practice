@@ -19,3 +19,5 @@ class Real:
     
     def __mul__(self, other):
         return Real(self.value * other.get_value())
+    
+    # Hello huhu
