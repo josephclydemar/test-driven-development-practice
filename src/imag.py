@@ -27,3 +27,6 @@ class Imag:
     
     def __mul__(self, other):
         return Imag(self.__value * other.get_value())
+    
+    def __eq__(self, other):
+        return self.value == other.get_value()
